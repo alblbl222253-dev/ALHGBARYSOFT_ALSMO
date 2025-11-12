@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://i.imgur.com/kQJd24A.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GR-SOFT لإدارة قاعات الأفراح</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for a more modern look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #100E17;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #4a4a6a;
+        border-radius: 10px;
+        border: 2px solid #100E17;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #9F7AEA;
+      }
+
+      /* Simple Animations */
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+       @keyframes fadeInFast {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fade-in-fast {
+        animation: fadeInFast 0.2s ease-out forwards;
+      }
+      @keyframes slideUp {
+        from { transform: translateY(20px) scale(0.98); opacity: 0; }
+        to { transform: translateY(0) scale(1); opacity: 1; }
+      }
+      .animate-slide-up {
+        animation: slideUp 0.3s ease-out forwards;
+      }
+
+      body {
+        --tw-bg-opacity: 1;
+        background-color: rgb(15 12 23 / var(--tw-bg-opacity));
+        font-family: 'Tajawal', 'sans-serif'; /* A modern Arabic font */
+      }
+      
+      @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
